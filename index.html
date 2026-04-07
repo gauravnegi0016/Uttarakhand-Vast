@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttarakhand | The Ultimate Vast Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">UTTARAKHAND VAST</div>
+        <div class="back-btn" id="backBtn" onclick="showHome()">← EXPLORE MORE</div>
+    </nav>
+
+    <section id="home-view" style="background-image: url('1000171137.jpg'); background-size: cover; background-position: center;">
+        <h1>Devbhoomi</h1>
+        <p>Land of the Gods & Eternal Mountains</p>
+        <div class="main-menu">
+            <div class="menu-card" onclick="openCategory('temple')">
+                <img src="https://uttrakhanddreamvalley.com/wp-content/uploads/2025/06/blog-post-3.jpg" alt="Temples">
+                <h2>The Temples</h2>
+            </div>
+            <div class="menu-card" onclick="openCategory('gem')">
+                <img src="https://english.cdn.zeenews.com/sites/default/files/2024/09/17/1512693-uttrakhand.png?im=Resize=(1200,900)" alt="Gems">
+                <h2>Hidden Gems</h2>
+            </div>
+            <div class="menu-card" onclick="openCategory('festival')">
+                <img src="https://i.pinimg.com/736x/aa/e2/e6/aae2e6530d46004a019965ac6bd7e514.jpg" alt="Culture">
+                <h2>Culture</h2>
+            </div>
+            <div class="menu-card" onclick="openCategory('food')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFHb2lw8epRfTEw9WgiHdBqcxkW0gfaOPqw&s" alt="Food">
+                <h2>Food</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="category-view">
+        <h1 id="categoryTitle" class="cat-title">Category</h1>
+        <div class="grid" id="categoryGrid"></div>
+    </section>
+
+    <div class="modal" id="infoModal">
+        <div class="modal-inner">
+            <span class="close-modal" onclick="closeModal()">×</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
